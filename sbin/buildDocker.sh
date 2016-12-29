@@ -5,8 +5,9 @@ if [ ! $version ] ; then
   echo "thanks! bye!"
   exit 1
 fi
+echo '1311111123123123' $version
 mv Aries.yaml.k8s Aries.yaml
 sed -i '/daemonize/d' Aries.xml
 cd ..
-docker build -t docker.baifendian.com/lupan/sirius_lugu:${version} .
-docker push docker.baifendian.com/lupan/sirius_lugu:${version}
+#docker build -t docker.baifendian.com/lupan/sirius_lugu:${version} .
+#docker push docker.baifendian.com/lupan/sirius_lugu:${version}
