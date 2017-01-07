@@ -5,7 +5,7 @@ if [ ! $version ] ; then
   echo "thanks! bye!"
   exit 1
 fi
-echo '1311111123123123' $version
+echo 'Version is:' $version
 mv Aries.yaml.k8s Aries.yaml
 sed -i '/daemonize/d' Aries.xml
 cd ..
